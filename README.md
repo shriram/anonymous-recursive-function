@@ -7,8 +7,6 @@ some special mechanism by which the function can refer to itself
 without having to explicitly introduce a name. In some contexts, this
 is called *anaphora*.
 
-(Credit to James Brundage, “MrPowerShell”, who showed it to me on
-[Bluesky](https://bsky.app/profile/mrpowershell.com/post/3lxx3yk4l5k2t).)
 
 Here we show how we can easily implement this feature in Racket. The
 file [`anon-rec.rkt`](./anon-rec.rkt) implements a macro called
@@ -37,3 +35,17 @@ and varying complexity:
 
 (In case you're wondering, I added `lam/anon♻️` to the `lambda`-like keywords
 list of DrRacket's Indenting configuration. That's why the layout is so nice.)
+
+Credits:
+
+* James Brundage, “MrPowerShell”,
+  [showed me](https://bsky.app/profile/mrpowershell.com/post/3lxx3yk4l5k2t)
+  the PowerShell
+  [`$MyInvocation`](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-7.5#myinvocation)
+  on Bluesky.
+  
+* Ali M, `@deadmarshal` on `mastodon.social`,
+  [pointed out](https://mastodon.social/@deadmarshal/115144121899754304)
+  that Forth has a keyword named
+  [`RECURSE`](https://forth-standard.org/standard/core/RECURSE)
+  that does this.
