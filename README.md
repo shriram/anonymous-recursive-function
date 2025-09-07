@@ -64,6 +64,8 @@ and varying complexity:
   function. It exists only to check that “varargs” works properly with
   `lam/anon♻️`.
 
+* `sum-tree` shows that we're not limited to linear recursion.
+
 (In case you're wondering, I added `lam/anon♻️` to the `lambda`-like keywords
 list of DrRacket's Indenting configuration. That's why the layout is so nice.)
 
