@@ -96,7 +96,7 @@ function you want to recur on, not only the nearest enclosing named one.
 
 If you're a Racket programmer, be aware there's already a good solution for this!
 The 
-[`rec` form](https://docs.racket-lang.org/mzlib/mzlib_etc.html#%28form._%28%28lib._mzlib%2Fetc..rkt%29._rec%29%29)
+[`rec` form](https://docs.racket-lang.org/srfi/srfi-std/srfi-31.html)
 already does something very much like this. For instance, say you were half-way into
 writing
 ```
@@ -122,8 +122,8 @@ The virtues of this solution are:
 - You get to pick a meaningful name.
 - You get to retain all the [bells-and-whistles](https://docs.racket-lang.org/reference/lambda.html#%28form._%28%28lib._racket%2Fprivate%2Fbase..rkt%29._lambda%29%29) of `lambda`; `rec` is orthogonal to that.
 
-`rec` is also defined in [SRFI-31](https://srfi.schemers.org/srfi-31/srfi-31.html), in case
-you're a vanilla Schemer.
+`rec` is defined in [SRFI-31](https://srfi.schemers.org/srfi-31/srfi-31.html), so
+you can use it even as a vanilla Schemer.
 
 ## Credits
 
