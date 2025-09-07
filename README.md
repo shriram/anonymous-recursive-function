@@ -77,7 +77,7 @@ writing
         1
         (* n •
 ```
-whoops! Well, you can now *emph* wrap it in `rec`, choosing the name you'd like:
+whoops! Well, you can now *wrap* it in `rec`, choosing the name you'd like:
 ```
 (rec fact
   (λ (n)
