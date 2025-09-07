@@ -64,3 +64,24 @@
 (check-equal? (range 5 5) empty)
 (check-equal? (range 0 2) '(0 1))
 (check-equal? (range 5 10) '(5 6 7 8 9))
+
+;; Let's look at a non-linear recursion:
+
+(struct mt ())
+(struct node (v l r))
+
+(define sum-tree
+  (lam/anon♻️(t)
+    (cond
+      [(mt? t) 0]
+      [(node? t) (+ (node-v t)
+                    ($MyInvocation (node-l t))
+                    ($MyInvocation (node-r t)))])))
+
+(define t (node 5
+                (node 3 (mt) (mt))
+                (node 7
+                      (node 9 (mt) (mt))
+                      (mt))))
+
+(check-equal? (sum-tree t) 24)
