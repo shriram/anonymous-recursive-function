@@ -9,6 +9,23 @@ some special mechanism by which the function can refer to itself
 without having to explicitly introduce a name. In some contexts, this
 is called an *anaphoric* reference.
 
+## Why Did You Write This?
+
+As expected, once this hit social media, people assumed all kinds of
+things that were not intended.
+
+This is not meant to be a great programming feature. In fact, if you
+read futher down in this very document, you'll see that I tell you to
+*not* use it and suggest a better alternative.
+
+I wrote it for three reasons:
+
+1. As a simple illustration of a name-capture macro.
+2. To show how a powerful macro system can help us easily add neat 
+   features that weren't built into the language. While this may not 
+   be a feature you want, there may be other, similar features that you do.
+3. It's fun. Stop taking it seriously.
+
 ## Code
 
 Here we show how we can easily implement this feature in Racket. The
