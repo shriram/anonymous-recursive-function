@@ -17,6 +17,15 @@ file [`anon-rec.rkt`](./anon-rec.rkt) implements a macro called
 This specifically binds the name `$MyInvocation`, to mimic the syntax
 of PowerShell, though the `$` here does not mean anything special.
 
+## What is It Not?
+
+It's not the Y-combinator. The Y-combinator also enables you to define
+anonymous recursive functions, but not everything that does so is a
+Y-combinator. This is just a macro over explicit recursion.
+
+It's not `rec`. `rec` defines named recursive functions, not
+anonymous ones.
+
 ## Examples
 
 The file [`client.rkt`](./client.rkt) shows several uses of increasing
