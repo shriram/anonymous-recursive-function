@@ -94,6 +94,9 @@ The virtues of this solution are:
 - You get to pick a meaningful name.
 - You get to retain all the [bells-and-whistles](https://docs.racket-lang.org/reference/lambda.html#%28form._%28%28lib._racket%2Fprivate%2Fbase..rkt%29._lambda%29%29) of `lambda`; `rec` is orthogonal to that.
 
+`rec` is also defined in [SRFI-31](https://srfi.schemers.org/srfi-31/srfi-31.html), in case
+you're a vanilla Schemer.
+
 ## Credits
 
 * James Brundage, “MrPowerShell”,
