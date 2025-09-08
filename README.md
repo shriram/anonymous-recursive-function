@@ -78,7 +78,7 @@ some helper function as a `lambda`, then half-way through realize it would be
 nice if the function could recur. But on its own a `lambda` can't recur, because
 it's *anonymous*, and recursion requires a name. So the traditional solution is
 to rewrite the program: e.g., introduce a `letrec`, give a name, make this `lambda`
-its right-hand side expression, then use tha name in the `lambda`s body.
+its right-hand side expression, then use that name in the `lambda`s body.
 
 All this
 requires a fair bit of boring editing. It significantly increases the indentation
