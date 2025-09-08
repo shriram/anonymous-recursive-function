@@ -74,7 +74,8 @@ list of DrRacket's Indenting configuration. That's why the layout is so nice.)
 Jokes aside, why is this useful?
 
 I've often had the experience that I'm writing
-some helper function as a `lambda`, then half-way through realize it would be
+some helper function as a `lambda`, or passing one to a higher-order function;
+then half-way through I realize it would be
 nice if the function could recur. But on its own a `lambda` can't recur, because
 it's *anonymous*, and recursion requires a name. So the traditional solution is
 to rewrite the program: e.g., introduce a `letrec`, give a name, make this `lambda`
